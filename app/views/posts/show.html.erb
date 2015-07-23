@@ -1,0 +1,15 @@
+<h1>Popular Posts</h1>
+
+
+<%= link_to "&larr; back".html_safe, post_path, :class=>"btn btn-primary btn-xs back" %>
+<%= link_to "", new_post_path, class: 'btn btn-primary btn-xs glyphicon glyphicon-plus pull-right' %>
+
+  <div class="well">
+    <p><span class = "creatures">
+      Title: <%= @post.title %></span> |
+      Posted At:  <%= @post.created_at%>
+    </p>
+    <p>link: <%= @post.link %></p>
+
+
+  </div>
